@@ -1,0 +1,3 @@
+#!/bin/sh
+docker run -d -name kibana -p :80:80  hbouvier/kibana3
+
