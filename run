@@ -1,3 +1,4 @@
 #!/bin/sh
-docker run -d -name kibana -p :80:80  hbouvier/kibana3
-
+NAME=${1-kibana}
+LINK=${2-elasticsearch}
+docker run -d -name "${NAME}" -p :80:80 -link ${LINK}:es hbouvier/kibana3
