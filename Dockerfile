@@ -1,4 +1,4 @@
-FROM hbouvier/ubuntu-chef
+FROM hbouvier/precise-chef
 MAINTAINER henri bouvier
 
 RUN locale-gen --no-purge en_US.UTF-8
